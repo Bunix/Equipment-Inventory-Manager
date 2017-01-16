@@ -1,27 +1,14 @@
-# Laravel PHP Framework
+## Equipment Inventory Manager
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+The Equipment Inventory Manager is a PHP based web applicatipn using the [Laravel](http://laravel.com) framework to create an easy to use lab equipment tracking and managment system. Users can register and be added to one or more labs/departments and are then able to add, modify, or delete the equipment in that lab. The main page consists of a location tree selector to display a list of equipment in all the labs, and are able to view equipment that is in labs they do not belong to (but not modify them in any way). 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+The home screen serves as a single-page web application where once the desired lab is selected from the expanding tree view, an AJAX call is made to generate the equipment list for that lab to thr right of it. Then users can select the equipment they want to view and another AJAX call is made to display all the equipment class and item information on the right half of the page.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Users are able to add new classes of items, as well as add specific individual items to those classes. This helps reduce redundant information and any updates to the class information gets applied to all the items in that particular class automatically. 
 
-## Official Documentation
+There is an advanced search functionality where users can select from a list of fields to find all equipment items that match the search term entered, and displays all the information in a table summary view where what is shown can be changed depending on the type of information relevant to that particular user. 
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+There are admin and lab owner panels for managing the users and labs in the application that makes adding new labs, locations, lab owners, lab members, and roles easy to do.
 
-## Contributing
+The application uses PHP, Laravel 5.3, Bootstrap, JQuery/Javascript, Select2 for keyword and parameter tagging support, HTML5 and CSS3. 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
